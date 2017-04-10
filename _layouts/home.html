@@ -12,55 +12,16 @@
     <body class="bg-light-yellow">
         {% include header.html %}
         <div class="mh6-l mh4-m mh2">
-
-        <!== START QUESTIONS ==>
-        <h1><u>Questions & Answers</u></h1>
-        <h2 class="i">Rank your 5 favorite, and least favorite, activities from <a class="pink" href="https://gist.github.com/fool/b0f254ff8c72a5765b6a9138249789d6">this</a> list:</h2>
-
-        <h3>Favorites (from most favorite to least favorite)</h3>
-        <ol>
-        <li>Debug a customer's build using a programming language and framework that you've never seen before.</li>
-
-        <li>Analyze thousands of support tickets to spot trends to improve our product.</li>
-
-        <li>Suggest and champion improvements to the product and workflow to your colleagues in and out of support.</li>
-
-        <li>Work with the development team to help design a new feature based on feedback from customers.</li>
-        <li>Receive occasional phone calls requesting support from our highest-value customers.</li>
-        </ol>
-
-        <h3>Least Favorites (from most favorite to least favorite)</h3>
-        <ol>
-        <li>Create video tutorials to help teach users a specific feature or use case.</li>
-        <li>Find and recruit teammates for the support team.</li>
-        <li>Respond to Netlify fans on Twitter.</li>
-        <li>Manage a support team.</li>
-        <li>Deliver a talk to many people you don't know at a conference or meetup.</li>
-        </ol>
-
-        <h3>Summary</h3>
-        <p>For my favorites, I chose things that utilize my development or support skills. For my least favorites, I chose things that didn't <i>really</i> have to do with writing software or support; mainly managment and marketing tasks. I like doing that stuff, just not full time.</p>
-
-        <h2 class="i">What is your favorite thing about providing technical support?</h2>
-        <p>I love adding empathy to the software industry. I like making people feel like they are part of the product. Most of all, I love helping people. I have have supported a wide-variety of clients across many products and I'm always learning from them.</p>
-        <p>
-
-        <h2 class="i">What did you think of our service during the time you used it?</h2>
-        <h3>The Good</h3>
-        <ul>
-        <li>The build process is fantastic. I have never had a build fail.</li>
-        <li>The performance is great, all of my sites are super fast.</li>
-        <li>It's simple. Netlify does static hosting and does it well.</li>
-        </ul>
-        <h3>The Okay</h3>
-        <ul>
-        <li>The documentation is pretty good. I think it could be more readable and / or searchable. Having 20+ root items in the side navigation of the documentation page is overwhelming.</li>
-        <li>I would like to see the uptime of the system. What are the SLA agreements for the different plan levels?</li>
-        </ul>
-        <h3>The Bad</h3>
-        <ul>
-        <li>A few weeks ago, there was an outage that briefly removed all of my sites. Downtime should be actively communcated to customers.</li>
-        </ul>
+            <h1><u>Questions &#38; Answers</u></h1>
+            {% include favorite_items.html %}
+            {% include favorite_thing_about_tech_support.html %}
+            {% include what_did_you_think_of_netlify.html %}
+            {% include interview_suggestions.html %}
+            {% include good_docs.html %}
+            {% include ssl_https.html %}
+            {% include dns.html %}
+            {% include customer_reply.html %} 
+            {% include bonus.html %} 
         </div>
     </body>
 </html>

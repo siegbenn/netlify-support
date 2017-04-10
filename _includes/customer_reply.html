@@ -1,0 +1,34 @@
+<!-- start customer_reply.html -->
+
+<h2 class="i">A customer writes in saying their “site won’t build”.  Compose your best short (2-paragraph) customer-facing answer without any additional data, that could be useful in the generic case but would also lead to a customer providing a more actionable response.</h2>
+<p>
+    Hi insert_name,
+    <br />
+    <br /> Sorry your site isn’t building! To help us get this fixed, it would be great if you could look into a few things for us:
+    <br />
+    <ol>
+        <li>What build tool and version are you using?</li>
+        <p>
+            A lot of times, a build will fail due to the version of the build tool specified in your project. The version you are using should be located in your package file (package.json, requirements.txt or Gemfile).</p>
+
+        <li>Double check that your build command doesn’t serve content.</li>
+        <p>
+
+            If your build command is trying to serve your site ($ node index.js or $ npm start), your build will probably timeout. We will always try to run your build command but if it doesn’t complete in 15 minutes, we shut it down.</p>
+
+        <li>Are all of the packages your project uses public?</li>
+        <p>
+
+            Our build containers have access to all public repositories and packages. But if you are using something like a private repository or npm package, we won’t be able to access it. If that’s the case we recommend a local copy of the private repository or package before sending us a build.
+        </p>
+    </ol>
+
+    If everything above looks good and your site still isn’t building, don’t worry! We’re always happy to dig into the logs with you.
+    <br />
+    <br /> Best,
+
+    <br /> Bennett
+
+</p>
+
+<!-- end customer_reply.html -->
