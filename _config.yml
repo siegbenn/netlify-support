@@ -27,7 +27,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
-include: ["_redirects"]
+include: ["_redirects", "favicon.ico"]
 exclude:
   - Gemfile
   - Gemfile.lock
