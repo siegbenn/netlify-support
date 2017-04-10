@@ -1,6 +1,6 @@
 <!-- start bonus.html -->
 
-<h2 class="i">Can you set up a redirect from “/netlify/anything” to https://www.google.com/search?q=anything ?</h2>
+<h2 class="{{site.question_style}}">Can you set up a redirect from “/netlify/anything” to https://www.google.com/search?q=anything ?</h2>
 <p>Yep, here's an example: <a class="{{site.link_color}}" href="{{site.url}}/netlify/test">{{site.url}}/netlify/test</a></p>
 <p>This was done by adding the line "/netlify/*  https://google.com/search?q=:splat  301" to my _redirects file.</p>
 

@@ -34,3 +34,4 @@ exclude:
 
 # Custom settings
 link_color: pink
+question_style: i
