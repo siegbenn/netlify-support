@@ -31,3 +31,6 @@ include: ["_redirects", "favicon.ico"]
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Custom settings
+link_color: pink
